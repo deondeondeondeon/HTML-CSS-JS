@@ -1,0 +1,50 @@
+body{
+    background: black;
+}
+header {
+    background-color: #3985ff;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center; 
+}
+
+nav li {
+    display: inline-block; 
+    margin: 0 20px;
+}
+
+nav li a {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+}
+
+nav li a:hover {
+    background-color: white;
+    color: black;
+}
+
+
+img{
+    width: 40%;
+    height: 30%;
+    margin-top: 45px;
+    margin-left: 25px;
+   
+ 
+}
+
+footer{
+    text-align: center;
+    background-color:#3985ff;
+    color: white;
+    padding: 20px;
+    margin-top: 52px;
+}
+
