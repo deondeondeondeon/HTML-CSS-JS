@@ -1,0 +1,43 @@
+/*div{
+   width: 200px;
+   height: 200px;
+   background-color: red;
+   transition: background 3s , border-radius 5s;
+   transition-delay: 2s;
+}
+div:hover{
+    background-color: blue;
+    border-radius: 50%;
+}
+*/
+#image1 img{
+    transform: scale(1);
+    transition: .3 ease-in-out;
+}
+#image1:hover img{
+    transform: scale(1.3);
+    border: 2px solid red;
+}
+#image2 img{
+    margin-left: 0px;
+    transition: .3s ease-in-out;
+    border: 2px solid black;
+}
+#image2:hover img{
+    margin-left: 100px;
+    border: 2px solid red;
+}
+#image3 img{
+    filter: blur(3px);
+    transition: .3s ease-in-out;
+}
+#image3:hover img{
+    filter: blur(0);
+}
+#image4 img{
+    filter: grayscale(100%);
+    transition: .3s ease-in-out;
+}
+#image4:hover img{
+    filter: grayscale(0);
+}
