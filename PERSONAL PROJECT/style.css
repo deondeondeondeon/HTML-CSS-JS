@@ -1,0 +1,141 @@
+
+body {
+margin: 0;
+padding: 0;
+font-family: 'Poppins', sans-serif;
+background-color: #f9f9f9;
+color: #333;
+}
+
+
+header {
+background-color: #9bcc71;
+padding: 10px 0;
+box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.nav-container {
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 0 30px;
+}
+
+.logo {
+height: 55px;
+width: auto;
+}
+
+nav ul {
+list-style: none;
+margin: 0;
+padding: 0;
+}
+
+nav li {
+display: inline;
+margin: 0 15px;
+}
+
+nav li a {
+color: white;
+text-decoration: none;
+padding: 10px 18px;
+font-weight: 600;
+transition: all 0.3s ease;
+}
+
+nav li a:hover {
+background-color: white;
+color: #629635;
+border-radius: 6px;
+}
+
+
+.animals{
+    height: 792.7px;
+    width: auto;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: right; 
+}
+
+nav li {
+    display: inline;
+    margin: 0 20px;
+}
+
+nav li a {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+}
+
+nav li a:hover {
+    background-color: white;
+    color: black;
+}
+
+.content {
+    text-align: center;
+    margin-top: 20px; 
+}
+nav li a {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border: none;          
+    outline: none;         
+}
+nav li a:focus {
+    outline: none;         
+}
+.img {
+position: relative;
+width: 100%;
+height: 80vh;
+overflow: hidden;
+}
+
+.animals {
+width: auto;
+height: 792.7px;
+object-fit: cover;
+filter: blur(3px) brightness(70%); 
+}
+
+.img-text {
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+text-align: center;
+color: #9bcc71;
+font-size: 3em;
+font-weight: bold;
+text-shadow: 2px 2px 5px rgba(0,0,0,0.7); 
+}
+.footer {
+background-color: #629635;
+color: #fff;
+text-align: center;
+padding: 20px 0;
+font-family: 'Poppins', sans-serif;
+margin-top: 60px;
+}
+
+.footer a {
+color: #f4b400;
+text-decoration: none;
+font-weight: bold;
+}
+
+.footer a:hover {
+color: #fff;
+}
