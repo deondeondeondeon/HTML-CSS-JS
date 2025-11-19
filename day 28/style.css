@@ -1,0 +1,15 @@
+.heading2{
+    color: lightblue;
+    background-color: black;
+}
+.jsStyle{
+font-size: 100px;
+    color: lightblue;
+    background-color: lightgray;
+    padding: 20px;
+    margin-top: 100px;
+    border: 1px solid black;
+    text-align: center;
+    transition: 1s ease;
+    transform: scale(0.9);
+}
