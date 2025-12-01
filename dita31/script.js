@@ -47,3 +47,20 @@ for(x in person){
     j =+ 1;
     console.log(j);
  } while (j<5)
+
+//while
+
+
+//try to reacreate a for loop to be repeated based on the length of an array
+
+var person={
+    firstname: "Harry Potter ",
+    
+    
+};
+
+var text = '';
+var x;
+for(x in person){
+    console.log(text+=person[x]);
+}
