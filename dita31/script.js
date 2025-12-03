@@ -53,14 +53,9 @@ for(x in person){
 
 //try to reacreate a for loop to be repeated based on the length of an array
 
-var person={
-    firstname: "Harry Potter ",
-    
-    
-};
+var students = ["John","Mark",ana]
 
-var text = '';
-var x;
-for(x in person){
-    console.log(text+=person[x]);
-}
+for (i=0; i<students.length; i++){
+    document.write(students[i] + 'br')
+} 
+
