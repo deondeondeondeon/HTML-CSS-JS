@@ -1,0 +1,16 @@
+#name_error{
+    visibility: hidden;
+    color: red;
+}
+#username_error{
+    visibility: hidden;
+    color: red;
+}
+#email_error{
+    visibility: hidden;
+    color: red;
+}
+#password_error{
+    visibility: hidden;
+    color: red;
+}
