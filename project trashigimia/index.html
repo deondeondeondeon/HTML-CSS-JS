@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="sq">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gjenet & Veti të Trashëguara</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="logo">Ramiz Kingu</div>
+    <ul class="nav-links">
+      <li><a href="#hero">Titulli</a></li>
+      <li><a href="#genes">Gjenet</a></li>
+      <li><a href="#inheritance">Trashëgimia</a></li>
+      <li><a href="#facts">Fakte</a></li>
+    </ul>
+  </nav>
+
+  <section id="hero" class="hero">
+    <div class="hero-content">
+      <h1>Gjenet kontrollojnë zhvillimin e vetive të trashëguara</h1>
+      <p>Rolet e gjeneve tek individët</p>
+      <button id="scrollBtn">Mëso më shumë</button>
+    </div>
+  </section>
+
+  <section id="genes" class="section">
+    <h2>Çfarë janë gjenet</h2>
+    <p class="center-text">Gjenet janë njësitë bazë të trashëgimisë biologjike dhe luajnë rol kyç në zhvillimin e çdo individi</p>
+    <div class="grid">
+      <div class="card">
+        <h3>ADN dhe Struktura</h3>
+        <p>Gjenet janë segmente të ADN-së që gjenden në kromozome ADN-ja ka strukturë spirale të dyfishtë dhe mban kodin gjenetik që udhëzon funksionet qelizore</p>
+      </div>
+      <div class="card">
+        <h3>Shprehja e gjeneve</h3>
+        <p>Jo të gjitha gjenet janë aktive në çdo moment Shprehja gjenetike varet nga nevojat e qelizës dhe nga faktorë të jashtëm si ushqimi temperatura dhe mjedisi</p>
+      </div>
+      <div class="card">
+        <h3>Mutacionet</h3>
+        <p>Ndryshimet në sekuencën e ADN-së quhen mutacione Ato mund të jenë neutrale të dobishme ose të dëmshme dhe janë burim i evolucionit</p>
+      </div>
+      <div class="card">
+        <h3>Gjenet dominante dhe recesive</h3>
+        <p>Disa gjene janë dominante dhe shfaqen edhe kur trashëgohet vetëm një kopje ndërsa gjenet recesive shfaqen vetëm kur janë të dyja kopjet</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="inheritance" class="section dark">
+    <h2>Trashëgimia gjenetike tek individët</h2>
+    <p class="center-text">Trashëgimia është procesi me të cilin tiparet biologjike kalojnë nga prindërit tek pasardhësit</p>
+
+    <div class="grid">
+      <div class="card">
+        <h3>Kromozomet</h3>
+        <p>Çdo individ ka 46 kromozome 23 nga nëna dhe 23 nga babai Këto përmbajnë mijëra gjene</p>
+      </div>
+      <div class="card">
+        <h3>Kombinimi gjenetik</h3>
+        <p>Gjatë riprodhimit gjenet përzihen duke krijuar kombinime unike që shpjegojnë pse fëmijët nuk janë identik me prindërit</p>
+      </div>
+      <div class="card">
+        <h3>Trashëgimia Mendeliane</h3>
+        <p>Gregor Mendel shpjegoi ligjet bazë të trashëgimisë përmes eksperimenteve me bimët e bizeleve</p>
+      </div>
+    </div>
+
+    <div class="timeline" style="margin-top:60px">
+      <div class="step">Prindërit</div>
+      <div class="line"></div>
+      <div class="step">Kromozomet</div>
+      <div class="line"></div>
+      <div class="step">Gjenet</div>
+      <div class="line"></div>
+      <div class="step">Individi</div>
+    </div>
+  </section>
+
+  <section id="facts" class="section">
+    <h2>Fakte shkencore rreth gjeneve</h2>
+    <div class="facts-box">
+      <p id="factText">Gjenet ndikojnë jo vetëm në pamjen fizike por edhe në sjellje metabolizëm dhe shëndet</p>
+      <button id="factBtn">Shfaq fakt tjetër</button>
+    </div>
+
+    <div class="grid" style="margin-top:60px">
+      <div class="card">
+        <h3>Gjenet dhe shëndeti</h3>
+        <p>Disa sëmundje si diabeti anemia ose hemofilia kanë bazë gjenetike por shpesh ndikohen edhe nga stili i jetesës</p>
+      </div>
+      <div class="card">
+        <h3>Epigjenetika</h3>
+        <p>Epigjenetika studion mënyrën se si faktorët mjedisorë mund të aktivizojnë ose çaktivizojnë gjene pa ndryshuar ADN-në</p>
+      </div>
+      <div class="card">
+        <h3>Evolucioni</h3>
+        <p>Ndryshimet gjenetike të akumuluara gjatë brezave çojnë në evolucion dhe adaptim të specieve</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2026 Ramiz Kingu</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
+<script>
+const facts = [
+  "Njeriu ka rreth 20,000–25,000 gjene në ADN-në e tij",
+  "Gjenet përcaktojnë ngjyrën e syve, flokëve dhe shumë tipare të tjera",
+  "Edhe mjedisi ndikon në shprehjen e gjeneve",
+  "99.9% e ADN-së është e njëjtë tek të gjithë njerëzit"
+]
+
+const factBtn = document.getElementById("factBtn")
+const factText = document.getElementById("factText")
+let index = 0
+
+factBtn.addEventListener("click", () => {
+  factText.textContent = facts[index]
+  index = (index + 1) % facts.length
+})
+
+const scrollBtn = document.getElementById("scrollBtn")
+scrollBtn.addEventListener("click", () => {
+  document.getElementById("genes").scrollIntoView({ behavior: "smooth" })
+})
+</script>
